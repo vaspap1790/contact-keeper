@@ -11,11 +11,9 @@ const Register = props => {
     const { register, error, clearErrors, isAuthenticated } = authContext;
 
     useEffect( () => {
-
         if(isAuthenticated){
             props.history.push('/');
         }
-
         if(error === 'Email already used'){
             setAlert(error, 'danger');
             clearErrors();
