@@ -1,5 +1,4 @@
 import React, { useReducer } from 'react';
-import {v4 as uuid} from "uuid";
 import axios from 'axios';
 import ContactContext from './contactContext';
 import contactReducer from './contactReducer';
@@ -19,9 +18,9 @@ import {
 const ContactState = props => {
     const initialState = {
         contacts: null,
-        current: null,
+        current : null,
         filtered: null,
-        error: null
+        error   : null
     };
 
     const [state, dispatch] = useReducer(contactReducer, initialState);
