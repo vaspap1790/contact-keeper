@@ -1,5 +1,6 @@
 node_modules
 default.json
+production.json
 
 .DS_Store
 /client/.env.local
